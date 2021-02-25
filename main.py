@@ -21,9 +21,9 @@ class Todos(db.Model):
 
 
 db.create_all()
-# new_book = Todos(id=1, name="book", email="blabla@gmail.com", todos="To buy a new book today.")
-# db.session.add(new_book)
-# db.session.commit()
+new_book = Todos(id=1, name="book", email="blabla@gmail.com", todos="To buy a new book today.")
+db.session.add(new_book)
+db.session.commit()
 
 
 @app.route('/', methods=["GET", "POST"])
